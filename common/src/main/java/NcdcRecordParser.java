@@ -32,8 +32,9 @@ public class NcdcRecordParser {
       airTemperature = Integer.parseInt(airTemperatureString);
     } else {
       airTemperatureMalformed = true;
+      airTemperature = 9876;
     }
-    airTemperature = Integer.parseInt(airTemperatureString);
+    // airTemperature = Integer.parseInt(airTemperatureString);
     quality = record.substring(92, 93);
   }
   
